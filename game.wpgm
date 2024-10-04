@@ -15,10 +15,10 @@ program farmville {
  	
 	//BOTONES
 
-	keyboard.up().onPressDo({hector.subir()})
-	keyboard.down().onPressDo({hector.bajar()})
-	keyboard.left().onPressDo({hector.retroceder()})
-	keyboard.right().onPressDo({hector.avanzar()})
+	keyboard.up().onPressDo({})
+	keyboard.down().onPressDo({})
+	keyboard.left().onPressDo({})
+	keyboard.right().onPressDo({})
 	keyboard.m().onPressDo({hector.sembrarMaiz()})
 	keyboard.t().onPressDo({hector.sembrarTrigo()})
 	keyboard.o().onPressDo({hector.sembrarTomaco()})

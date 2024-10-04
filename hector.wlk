@@ -27,28 +27,14 @@ object hector {
 
 	method regar(){
 
-
+		self.cultivosEnMiPosicion().forEach{cultivo=>cultivo.crecer()}
 		
 	}
 
-	method retroceder(){
+	method cultivosEnMiPosicion(){
 
-		position = position.left(1)
+		return granja.cultivosAca(position)
 	}
 
-	method avanzar(){
 
-		position = position.right(1)
-
-	}
-
-	method subir(){
-
-		position = position.up(1)
-	}
-
-	method bajar(){
-
-		position = position.down(1)
-	}
 }

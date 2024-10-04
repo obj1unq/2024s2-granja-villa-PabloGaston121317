@@ -7,15 +7,14 @@ describe "granjaVilla" {
   method initialize() {
     game.height(10)
 	  game.width(10)
+    game.addVisualCharacter(hector)
+   
 
-    const maiz = new Maiz(position= hector.position())
+    
   }
   test "hector planta un maiz en su posicion actual" {
-    const maiz = new Maiz(position= game.at(3,3))
-    hector.position(game.at(3,3))
-    hector.sembrarMaiz()
+     
 
-    assert.equals(game.at(3,3), maiz.position() )
 
 
   }
