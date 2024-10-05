@@ -11,8 +11,22 @@ program farmville {
 
 	//  VISUALES
  	game.addVisualCharacter(hector)
- 	game.addVisual(new Maiz()) // Se agrega a modo de prueba
+ 	 // Se agrega a modo de prueba game.addVisual(new Maiz())
  	
+	//BOTONES
+
+	keyboard.up().onPressDo({})
+	keyboard.down().onPressDo({})
+	keyboard.left().onPressDo({})
+	keyboard.right().onPressDo({})
+	keyboard.m().onPressDo({hector.sembrarMaiz()})
+	keyboard.t().onPressDo({hector.sembrarTrigo()})
+	keyboard.o().onPressDo({hector.sembrarTomaco()})
+	keyboard.r().onPressDo({hector.regar()})
+	keyboard.c().onPressDo({hector.cosechar()})
+	keyboard.v().onPressDo({hector.venta()})
+	keyboard.backspace().onPressDo({hector.infoGanancia()})
+	keyboard.a().onPressDo({hector.colocarAspersor()})
  	//  COMIENZA
 	game.start()
 }

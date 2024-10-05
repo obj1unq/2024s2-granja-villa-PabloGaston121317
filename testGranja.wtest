@@ -1,9 +1,23 @@
-import example.pepita
+import cultivos.*
+import hector.*
+import wollok.game.*
 
-describe "group of tests for pepita" {
+describe "granjaVilla" {
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+  method initialize() {
+    game.height(10)
+	  game.width(10)
+    game.addVisualCharacter(hector)
+
+    
   }
 
+  test "hector siembra un trigo un tomaco y un maiz en la pasicion indicada" {
+    
+    hector.sembrarTrigo()
+    granja.sembrar(new Trigo (3,3))
+    
+    assert.equals(#{trigo}, granja.cultivos())
+    
+  }
 }
