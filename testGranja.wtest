@@ -8,15 +8,16 @@ describe "granjaVilla" {
     game.height(10)
 	  game.width(10)
     game.addVisualCharacter(hector)
-   
 
     
   }
-  test "hector planta un maiz en su posicion actual" {
-     
 
-
-
+  test "hector siembra un trigo un tomaco y un maiz en la pasicion indicada" {
+    
+    hector.sembrarTrigo()
+    granja.sembrar(new Trigo (3,3))
+    
+    assert.equals(#{trigo}, granja.cultivos())
+    
   }
-
 }

@@ -23,6 +23,10 @@ program farmville {
 	keyboard.t().onPressDo({hector.sembrarTrigo()})
 	keyboard.o().onPressDo({hector.sembrarTomaco()})
 	keyboard.r().onPressDo({hector.regar()})
+	keyboard.c().onPressDo({hector.cosechar()})
+	keyboard.v().onPressDo({hector.venta()})
+	keyboard.backspace().onPressDo({hector.infoGanancia()})
+	keyboard.a().onPressDo({hector.colocarAspersor()})
  	//  COMIENZA
 	game.start()
 }
